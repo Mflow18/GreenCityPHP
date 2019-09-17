@@ -149,3 +149,75 @@ a{
 }
 
 }
+
+.containerD{
+    background-color: #98FB98;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+
+}
+
+@media only screen and (min-width: 961px) {
+.visuelg{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.visueld{
+	display: flex;
+}
+
+.containerD p{
+	padding: 10px 20px;
+	flex : 2;
+}
+
+.visuel{
+	flex : 1;
+}
+
+}
+
+h2, h3{
+	padding-top: 20px;
+	text-align: center;
+}
+
+p, article, iframe, .visuel {
+	margin: 10px auto;
+}
+
+p{
+	width: 60%;
+	text-align: justify;
+}
+
+
+.visuel{
+	text-align: center;
+	width: 100%
+}
+
+.containerD img{
+	width: 60%;
+	max-height: 300px;
+	border-radius: 50%;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.carte{}
+
+
+/* pour iframe : iframe + output */
+iframe {
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px #000000;
+    width: 50%;
+}
+
+.output {
+    background: #eee;
+}
