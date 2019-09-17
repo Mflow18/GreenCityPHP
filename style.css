@@ -150,6 +150,59 @@ a{
 
 }
 
+<<<<<<< HEAD
+=======
+/*Css de Mathieu*/
+
+.fondvert {
+  background-color: #98FB98;
+}
+
+h2 {
+  color: #2E8B57;
+  text-align: center;
+}
+
+.element img {
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px #000000;
+  transition: all 1s;
+
+}
+
+.lien1 {
+  text-align: center;
+  color: #2E8B57;
+  
+}
+
+.element img:hover {
+  transform: scale(1.1);
+}
+  
+.container-general {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+@media only screen and (min-width: 961px) {
+
+  .container-general {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+/*Fin CSS Mathieu*/
+
+/*CSS De Delphine*/
+
+>>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
 .containerD{
     background-color: #98FB98;
     padding: 5px;
@@ -221,6 +274,7 @@ iframe {
 .output {
     background: #eee;
 }
+<<<<<<< HEAD
 
 /*Formulaire Anais*/
 
@@ -314,3 +368,5 @@ a{
     }
  
   }
+=======
+>>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
