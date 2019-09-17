@@ -32,6 +32,7 @@ div.menu {
   width: 100%;
   height: 100%;
   background-color: white;
+
 }
 
 /*apparition du menu quant il est ciblé*/
@@ -51,7 +52,7 @@ nav {
 }
 
 /*mise en forme des listes de la nav*/
-ul {
+.ulNav {
   display: flex;
   flex-direction: column-reverse; ;
   justify-content: space-around;
@@ -68,6 +69,7 @@ ul {
   list-style-type: none;
   width: 100%;
   height: 100vh;
+  transition: all 1s ;
 
 }
 /*mise en forme de la croix de fermeture du menu*/
@@ -85,73 +87,75 @@ ul {
 
 
 }
-a{
+.aNav{
   text-decoration: none;
 }
-img{
+.imgNav{
   display: none;
 }
 
 
 /*
 
-mise ne place des media
+mise ne place des medias
 
 */
 
 @media (min-width: 961px) {
 
-.icone{
-  display: none;
-}
-
-div.menu {
-  display: flex;
-  flex-direction: wrap;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  background-color: transparent;
-}
 
 
-ul {
-  flex-direction: row;
-  margin-right: 0;
-  margin-top: 0;
-  background-color: #98FB98 ;
-  border-radius: 10px;
-  font-size: 3em;
-  text-align: center;
-  list-style-type: none;
-  width: 70%;
-  height: 10vh;
-  border-radius: 5% ;
+  .icone{
+    display: none;
+  }
+
+  div.menu {
+    display: flex;
+    flex-direction: wrap;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+  }
+
+
+  .ulNav {
+    flex-direction: row;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: #98FB98 ;
+    border-radius: 10px;
+    font-size: 3em;
+    text-align: center;
+    list-style-type: none;
+    width: 70%;
+    height: 10vh;
+    border-radius: 5% ;
+  }
+
+  .close{
+    display: none;
+    flex: 0;
+  }
+  .imgNav{
+    display: block;
+    width: 15%;
+  }
+  .aNav:hover{
+    background-color: white;
+    border-radius: 15%;
+    padding-left: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+  }
+  .aNav{
+    vertical-align: sub;
+  }
+
 }
 
-.close{
-  display: none;
-  flex: 0;
-}
-img{
-  display: block;
-  width: 15%;
-}
-a:hover{
-  background-color: white;
-  border-radius: 15%;
-  padding-left: 0 10px 0 10px;
-  margin: 0 10px 0 10px;
-}
-a{
-  vertical-align: sub;
-}
-
-}
-
-<<<<<<< HEAD
-=======
+S
 /*Css de Mathieu*/
 
 .fondvert {
@@ -418,9 +422,13 @@ justify-content: align;
 }
 
 
-nav {
+/*probleme de nav en display none bloque le menu burger !!!!!*/
+
+
+
+/*nav {
   display: none;
-}
+}*/
 
 .containerFooter {
   display:none;
