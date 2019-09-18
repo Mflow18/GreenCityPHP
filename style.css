@@ -2,7 +2,9 @@
 
 body{
   width:100%;
+  font-family: 'PT Sans', sans-serif;
 }
+
 
 /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
 .icone{
@@ -151,53 +153,6 @@ mise ne place des medias
    .close{
     display: none;
    }
-  /*div.menu {
-    display: flex;
-    flex-direction: wrap;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-    position: absolute;
-  }
-
-
-  .ulNav {
-    flex-direction: row;
-    margin-right: 0;
-    margin-top: 0;
-    background-color: #98FB98 ;
-    border-radius: 10px;
-    font-size: 3em;
-    text-align: center;
-    list-style-type: none;
-    width: 70%;
-    height: 10vh;
-    border-radius: 5% ;
-    display: absolute;
-  }*/
-/*
-  .close{
-    display: none;
-    flex: 0;
-  }
-  
-  .imgNav{
-    display: block;
-    width: 15%;
-  }
-  
-  .aNav:hover{
-    background-color: white;
-    border-radius: 15%;
-    padding-left: 0 10px 0 10px;
-    margin: 0 10px 0 10px;
-  }
-  */
-  /*.aNav{
-    vertical-align: sub;
-  }*/
 
 }
 
