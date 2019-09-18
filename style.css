@@ -355,7 +355,6 @@ a{
   }
 
 
-
 @media screen and (max-width:961px){
   .containerFooter{
     flex-direction: column;
@@ -381,14 +380,14 @@ a{
  /*Début CSS Partie Céline */
 
 
-h1{
+.titrepage1 {
   color:#2E8B57;
   font-size:55px;
   text-align:center;
   padding-bottom: 20px;
 }
 
-h2{
+.titrepage2 {
   color:#2E8B57;
   font-size:30px;
   text-align:center;
@@ -396,18 +395,16 @@ h2{
 }
 
 
-
-img{
+.imageActAsso1 {
   border-radius: 50%;
     box-shadow: 2px 2px 4px #000000;
 
 }
 
-p{
+.paraActAsso {
 font-family: sans-serif;
 justify-content: align;
 }
-
 
 
 .description {
@@ -422,57 +419,47 @@ justify-content: align;
 }
 
 
-nav {
+.page {
   display: none;
-}
-
-/* Retirer / modifier le code display:none */;
-
-.containerFooter {
-  display:none;
 }
 
 @media (min-width: 962px){
 
-nav {
+.page {
       background-color: #2E8B57;
       display: block;
       margin: 0;
       font-size:20px;
   }
-  nav ul {
+.page ul {
       margin: 0px
   }
   
-  nav ul li {
+.page ul li {
       list-style-type: none;
       color: black;
       display: inline-block;
       padding: 10px 90px;
   }
   
-  .menu:hover {
+  .menuActAsso:hover {
       background-color: #98FB98;
       color: black;
     text-transform: uppercase;
     padding: 10px 20px;
   }
 
-  .container{
+  .containerActAsso {
   display:flex;
   flex-direction:row-reverse;
   justify-content: space-around;
   text-align: justify; 
 }
 
-.container div {
+.containerActAsso div {
   margin:30px;
 }
  
- .image {
-
-  padding-left:50px;
- }
 
 #logo{
 
