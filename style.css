@@ -1,4 +1,5 @@
-chrome/*définition de la largeur du body*/
+/*définition de la largeur du body*/
+
 body{
   width:100%;
 }
@@ -49,8 +50,7 @@ nav {
   padding: 0;
   width: 100%;
   height: 100px;
-  /*margin-top: 2em;
-  margin-right: 2em;*/
+  
 }
 
 /*mise en forme des listes de la nav*/
@@ -59,12 +59,9 @@ nav {
   flex-direction: column-reverse;
   justify-content: space-around;
   margin: auto;
-  /*margin-top: 15vh;*/
   padding: 8px;
   background-color: #98FB98;
-  /*height: 90%;*/
   position: relative;
-  /*border: 1px #000000 solid;*/
   border-radius: 10px;
   font-size: 3em;
   text-align: center;
@@ -84,9 +81,6 @@ nav {
   padding: 10px;
   margin-bottom: 1px;
  
-
-
-
 }
 .aNav{
   text-decoration: none;
