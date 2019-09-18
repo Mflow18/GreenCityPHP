@@ -95,7 +95,7 @@ img{
 
 /*
 
-mise ne place des media
+mise en place des media
 
 */
 
@@ -150,8 +150,6 @@ a{
 
 }
 
-<<<<<<< HEAD
-=======
 /*Css de Mathieu*/
 
 .fondvert {
@@ -202,7 +200,6 @@ h2 {
 
 /*CSS De Delphine*/
 
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
 .containerD{
     background-color: #98FB98;
     padding: 5px;
@@ -274,7 +271,6 @@ iframe {
 .output {
     background: #eee;
 }
-<<<<<<< HEAD
 
 /*Formulaire Anais*/
 
@@ -368,8 +364,7 @@ a{
     }
  
   }
-=======
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
+
  /* mettre menu burger sur version portable */
  /* enlever le footer sur version portable */
  /* mettre code du footer sur version PC */
