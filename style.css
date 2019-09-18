@@ -12,7 +12,6 @@ body{
   display: block;
   text-decoration: none;
   position: fixed;
-  margin-left: 40%;
   margin-top: 80vh;
   color: green;
   box-shadow: 5px 5px 5px black;
@@ -24,7 +23,7 @@ body{
 div.centrer{
   display: flex;
   justify-content: center;
-  width: 100%;
+
 }
 
 /*mise en forme du menu déroulant en position caché*/
@@ -283,11 +282,12 @@ h2 {
   margin-left: -5%;
 }
 
-.containerFormulaire{
+.containerFormulaire {
   display:flex;
   flex-direction: column;
   margin-left: 5%;
   width: 90%;
+  margin-bottom: 20px;
 }
 
 .Send{
@@ -305,35 +305,47 @@ h2 {
   border-radius: 5px;
   }
 
+
+#Name {
+  width: 50%;
+}
+
+#Email {
+  width :50%;
+}
+
+#Message {
+  height: 100px;
+}
+
 /*Footer*/
 
 .containerFooter{
   background-color:#2E8B57 ;
   display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-column: 1 / -1;
-  align-content: stretch;
-  border-radius: 6px;
-
-  }
-  
-.Navigation{
-  display:flex;
-  flex-direction : column;
   justify-content: space-around;
-  flex: 0.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   }
 
+.Navigation {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 
 .SocialMedia{
+
   display:flex;
   flex-direction : row-reverse;
   justify-content: space-around;
   align-items: center;
+
   }
+
 .mentionLegal{
   font-size: 70%;
   display: flex;
@@ -351,6 +363,15 @@ h2 {
  }
 
 @media screen and (max-width:961px) {
+
+  .formdiv {
+    display:flex;
+   flex-direction: column;
+   align-items:center;
+
+}
+
+
   .containerFooter {
     flex-direction: column;
     height: auto;
