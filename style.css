@@ -150,8 +150,7 @@ a{
 
 }
 
-<<<<<<< HEAD
-=======
+
 /*Css de Mathieu*/
 
 .fondvert {
@@ -202,7 +201,7 @@ h2 {
 
 /*CSS De Delphine*/
 
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
+
 .containerD{
     background-color: #98FB98;
     padding: 5px;
@@ -274,7 +273,8 @@ iframe {
 .output {
     background: #eee;
 }
-<<<<<<< HEAD
+
+
 
 /*Formulaire Anais*/
 
@@ -368,8 +368,8 @@ a{
     }
  
   }
-=======
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
+
+
  /* mettre menu burger sur version portable */
  /* enlever le footer sur version portable */
  /* mettre code du footer sur version PC */
@@ -377,14 +377,14 @@ a{
  /*Début CSS Partie Céline */
 
 
-h1{
+.titrepage1 {
   color:#2E8B57;
   font-size:55px;
   text-align:center;
   padding-bottom: 20px;
 }
 
-h2{
+.titrepage2 {
   color:#2E8B57;
   font-size:30px;
   text-align:center;
@@ -392,18 +392,16 @@ h2{
 }
 
 
-
-img{
+.imageActAsso {
   border-radius: 50%;
     box-shadow: 2px 2px 4px #000000;
 
 }
 
-p{
+.paraActAsso {
 font-family: sans-serif;
 justify-content: align;
 }
-
 
 
 .description {
@@ -422,51 +420,44 @@ justify-content: align;
   display: none;
 }
 
-.containerFooter {
-  display:none;
-}
 
 @media (min-width: 962px){
 
-.page{
+.page {
       background-color: #2E8B57;
       display: block;
       margin: 0;
       font-size:20px;
   }
-  .page ul {
+.page ul {
       margin: 0px
   }
   
-  .page ul li {
+.page ul li {
       list-style-type: none;
       color: black;
       display: inline-block;
       padding: 10px 90px;
   }
   
-  .menu:hover {
+  .menuActAsso:hover {
       background-color: #98FB98;
       color: black;
     text-transform: uppercase;
     padding: 10px 20px;
   }
 
-  .container{
+  .containerActAsso {
   display:flex;
   flex-direction:row-reverse;
   justify-content: space-around;
   text-align: justify; 
 }
 
-.container div {
+.containerActAsso div {
   margin:30px;
 }
  
- .image {
-
-  padding-left:50px;
- }
 
 #logo{
 
