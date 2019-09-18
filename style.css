@@ -82,12 +82,13 @@ ul {
   margin-bottom: 1px;
  
 
-
-
 }
 a{
   text-decoration: none;
 }
+
+/* Mettre une classe à img sinon ca influence les autres liens*/
+
 img{
   display: none;
 }
@@ -95,7 +96,7 @@ img{
 
 /*
 
-mise ne place des media
+mise en place des media
 
 */
 
@@ -138,6 +139,9 @@ img{
   display: block;
   width: 15%;
 }
+
+/* Mettre une classe sinon les a:hover s'appliquent à tous les liens*/
+
 a:hover{
   background-color: white;
   border-radius: 15%;
@@ -150,8 +154,6 @@ a{
 
 }
 
-<<<<<<< HEAD
-=======
 /*Css de Mathieu*/
 
 .fondvert {
@@ -202,7 +204,6 @@ h2 {
 
 /*CSS De Delphine*/
 
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
 .containerD{
     background-color: #98FB98;
     padding: 5px;
@@ -274,7 +275,6 @@ iframe {
 .output {
     background: #eee;
 }
-<<<<<<< HEAD
 
 /*Formulaire Anais*/
 
@@ -306,6 +306,7 @@ iframe {
   }
 
 /*Footer*/
+
 .containerFooter{
   background-color:#2E8B57 ;
   display: flex;
@@ -344,6 +345,9 @@ iframe {
   width: 30px;  
   }
 
+/* Modifier a avec une classe */
+
+
 a{
   text-decoration: none;
   color : white;
@@ -368,12 +372,12 @@ a{
     }
  
   }
-=======
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
+
  /* mettre menu burger sur version portable */
  /* enlever le footer sur version portable */
  /* mettre code du footer sur version PC */
  /* enlever navbar sur version portable */
+
  /*Début CSS Partie Céline */
 
 
@@ -421,6 +425,8 @@ justify-content: align;
 nav {
   display: none;
 }
+
+/* Retirer / modifier le code display:none */;
 
 .containerFooter {
   display:none;
