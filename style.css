@@ -1,481 +1,432 @@
-/*définition de la largeur du body*/
-body{
-  width:100%;
-}
-
-/*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
-.icone{
-  font-size: 10vh;
-  display: block;
-  text-decoration: none;
-  position: fixed;
-  margin-left: 40%;
-  margin-top: 80vh;
-  color: green;
-  box-shadow: 5px 5px 5px black;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-div.centrer{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-/*mise en forme du menu déroulant en position caché*/
-div.menu {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-
-/*apparition du menu quant il est ciblé*/
-
-div.menu:target {
-  display: flex;
-}
-
-/*mise en page de la nav*/
-nav {
-  margin: 2em 2em 2em 2em;
-  padding: 0;
-  width: 100%;
-  height: 100px;
-  /*margin-top: 2em;
+                /*définition de la largeur du body*/
+            
+            body {
+                width: 100%;
+            }
+            /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
+            
+            .icone {
+                font-size: 10vh;
+                display: block;
+                text-decoration: none;
+                position: fixed;
+                margin-left: 40%;
+                margin-top: 80vh;
+                color: green;
+                box-shadow: 5px 5px 5px black;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            
+            div.centrer {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            /*mise en forme du menu déroulant en position caché*/
+            
+            div.menu {
+                display: none;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+            }
+            /*apparition du menu quant il est ciblé*/
+            
+            div.menu:target {
+                display: flex;
+            }
+            /*mise en page de la nav*/
+            
+            nav {
+                margin: 2em 2em 2em 2em;
+                padding: 0;
+                width: 100%;
+                height: 100px;
+                /*margin-top: 2em;
   margin-right: 2em;*/
-}
-
-/*mise en forme des listes de la nav*/
-ul {
-  display: flex;
-  flex-direction: column-reverse; ;
-  justify-content: space-around;
-  margin: auto;
-  /*margin-top: 15vh;*/
-  padding: 8px;
-  background-color: #98FB98;
-  /*height: 90%;*/
-  position: relative;
-  /*border: 1px #000000 solid;*/
-  border-radius: 10px;
-  font-size: 3em;
-  text-align: center;
-  list-style-type: none;
-  width: 100%;
-  height: 100vh;
-
-}
-/*mise en forme de la croix de fermeture du menu*/
-.close{
-  font-size: 10vh;
-  text-decoration: none;
-  color: green;
-  box-shadow: 5px 5px 5px green;
-  border-radius: 50%;
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 1px;
- 
-
-}
-a{
-  text-decoration: none;
-}
-
-/* Mettre une classe à img sinon ca influence les autres liens*/
-
-img{
-  display: none;
-}
-
-
-/*
+            }
+            /*mise en forme des listes de la nav*/
+            
+            ul {
+                display: flex;
+                flex-direction: column-reverse;
+                ;
+                justify-content: space-around;
+                margin: auto;
+                /*margin-top: 15vh;*/
+                padding: 8px;
+                background-color: #98FB98;
+                /*height: 90%;*/
+                position: relative;
+                /*border: 1px #000000 solid;*/
+                border-radius: 10px;
+                font-size: 3em;
+                text-align: center;
+                list-style-type: none;
+                width: 100%;
+                height: 100vh;
+            }
+            /*mise en forme de la croix de fermeture du menu*/
+            
+            .close {
+                font-size: 10vh;
+                text-decoration: none;
+                color: green;
+                box-shadow: 5px 5px 5px green;
+                border-radius: 50%;
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 1px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            /* Mettre une classe à img sinon ca influence les autres liens*/
+            
+            img {
+                display: none;
+            }
+            /*
 
 mise en place des media
 
 */
-
-@media (min-width: 961px) {
-
-.icone{
-  display: none;
-}
-
-div.menu {
-  display: flex;
-  flex-direction: wrap;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  background-color: transparent;
-}
-
-
-ul {
-  flex-direction: row;
-  margin-right: 0;
-  margin-top: 0;
-  background-color: #98FB98 ;
-  border-radius: 10px;
-  font-size: 3em;
-  text-align: center;
-  list-style-type: none;
-  width: 70%;
-  height: 10vh;
-  border-radius: 5% ;
-}
-
-.close{
-  display: none;
-  flex: 0;
-}
-img{
-  display: block;
-  width: 15%;
-}
-
-/* Mettre une classe sinon les a:hover s'appliquent à tous les liens*/
-
-a:hover{
-  background-color: white;
-  border-radius: 15%;
-  padding-left: 0 10px 0 10px;
-  margin: 0 10px 0 10px;
-}
-a{
-  vertical-align: sub;
-}
-
-}
-
-/*Css de Mathieu*/
-
-.fondvert {
-  background-color: #98FB98;
-}
-
-h2 {
-  color: #2E8B57;
-  text-align: center;
-}
-
-.element img {
-  width:300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 4px #000000;
-  transition: all 1s;
-
-}
-
-.lien1 {
-  text-align: center;
-  color: #2E8B57;
-  
-}
-
-.element img:hover {
-  transform: scale(1.1);
-}
-  
-.container-general {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-}
-
-@media only screen and (min-width: 961px) {
-
-  .container-general {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-}
-
-/*Fin CSS Mathieu*/
-
-/*CSS De Delphine*/
-
-.containerD{
-    background-color: #98FB98;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-	width: 100%;
-
-}
-
-@media only screen and (min-width: 961px) {
-.visuelg{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.visueld{
-	display: flex;
-}
-
-.containerD p{
-	padding: 10px 20px;
-	flex : 2;
-}
-
-.visuel{
-	flex : 1;
-}
-
-}
-
-h2, h3{
-	padding-top: 20px;
-	text-align: center;
-}
-
-p, article, iframe, .visuel {
-	margin: 10px auto;
-}
-
-p{
-	width: 60%;
-	text-align: justify;
-}
-
-
-.visuel{
-	text-align: center;
-	width: 100%
-}
-
-.containerD img{
-	width: 60%;
-	max-height: 300px;
-	border-radius: 50%;
-    box-shadow: 2px 2px 4px #000000;
-}
-
-.carte{}
-
-
-/* pour iframe : iframe + output */
-iframe {
-    border: 1px solid black;
-    box-shadow: 2px 2px 4px #000000;
-    width: 50%;
-}
-
-.output {
-    background: #eee;
-}
-
-/*Formulaire Anais*/
-
-.contact{
-  text-align: center;
-  margin-left: -5%;
-}
-
-.containerFormulaire{
-  display:flex;
-  flex-direction: column;
-  margin-left: 5%;
-  width: 90%;
-}
-
-.Send{
-  margin-left: auto;
-  font-size: 80%;
-  text-align: center;
-  }
-
-.containerFormulaire input{
-  display:flex;
-  flex-direction: column;
-  padding-left: 4% ;
-  padding-right:4%;  
-  background-color: #F8F8F8F8;
-  border-radius: 5px;
-  }
-
-/*Footer*/
-
-.containerFooter{
-  background-color:#2E8B57 ;
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-column: 1 / -1;
-  align-content: stretch;
-  border-radius: 6px;
-
-  }
-  
-.Navigation{
-  display:flex;
-  flex-direction : column;
-  justify-content: space-around;
-  flex: 0.5;
-  }
-
-
-.SocialMedia{
-  display:flex;
-  flex-direction : row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  }
-.mentionLegal{
-  font-size: 70%;
-  display: flex;
-  align-items: flex-end;
-  }
-
-    
-.logo{
-  width: 30px;  
-  }
-
-/* Modifier a avec une classe */
-
-
-a{
-  text-decoration: none;
-  color : white;
-  
-  }
-
-
-
-@media screen and (max-width:961px){
-  .containerFooter{
-    flex-direction: column;
-    height: auto; 
-    justify-content: center;
-    align-content: center;
-    }
-  
-  a{text-align:center;}
-  
-  .Navigation, .mentionLegal, .SocialMedia{
-      margin-bottom:auto;
-      margin-top: auto;
-    }
- 
-  }
-
- /* mettre menu burger sur version portable */
- /* enlever le footer sur version portable */
- /* mettre code du footer sur version PC */
- /* enlever navbar sur version portable */
-
- /*Début CSS Partie Céline */
-
-
-h1{
-  color:#2E8B57;
-  font-size:55px;
-  text-align:center;
-  padding-bottom: 20px;
-}
-
-h2{
-  color:#2E8B57;
-  font-size:30px;
-  text-align:center;
-
-}
-
-
-
-img{
-  border-radius: 50%;
-    box-shadow: 2px 2px 4px #000000;
-
-}
-
-p{
-font-family: sans-serif;
-justify-content: align;
-}
-
-
-
-.description {
-  background-color: #98FB98;
-  padding-bottom: 100px;
-}
-
-.paradescription{
-  justify-content: align;
-  text-align:center;
-  padding-top:30px;
-}
-
-
-nav {
-  display: none;
-}
-
-/* Retirer / modifier le code display:none */;
-
-.containerFooter {
-  display:none;
-}
-
-@media (min-width: 962px){
-
-nav {
-      background-color: #2E8B57;
-      display: block;
-      margin: 0;
-      font-size:20px;
-  }
-  nav ul {
-      margin: 0px
-  }
-  
-  nav ul li {
-      list-style-type: none;
-      color: black;
-      display: inline-block;
-      padding: 10px 90px;
-  }
-  
-  .menu:hover {
-      background-color: #98FB98;
-      color: black;
-    text-transform: uppercase;
-    padding: 10px 20px;
-  }
-
-  .container{
-  display:flex;
-  flex-direction:row-reverse;
-  justify-content: space-around;
-  text-align: justify; 
-}
-
-.container div {
-  margin:30px;
-}
- 
- .image {
-
-  padding-left:50px;
- }
-
-#logo{
-
-padding: 0px 5px;
-}
-
+            
+            @media (min-width: 961px) {
+                .icone {
+                    display: none;
+                }
+                div.menu {
+                    display: flex;
+                    flex-direction: wrap;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 50px;
+                    background-color: transparent;
+                }
+                ul {
+                    flex-direction: row;
+                    margin-right: 0;
+                    margin-top: 0;
+                    background-color: #98FB98;
+                    border-radius: 10px;
+                    font-size: 3em;
+                    text-align: center;
+                    list-style-type: none;
+                    width: 70%;
+                    height: 10vh;
+                    border-radius: 5%;
+                }
+                .close {
+                    display: none;
+                    flex: 0;
+                }
+                img {
+                    display: block;
+                    width: 15%;
+                }
+                /* Mettre une classe sinon les a:hover s'appliquent à tous les liens*/
+                a:hover {
+                    background-color: white;
+                    border-radius: 15%;
+                    padding-left: 0 10px 0 10px;
+                    margin: 0 10px 0 10px;
+                }
+                a {
+                    vertical-align: sub;
+                }
+            }
+            /*Css de Mathieu*/
+            
+            .fondvert {
+                background-color: #98FB98;
+            }
+            
+            h2 {
+                color: #2E8B57;
+                text-align: center;
+            }
+            
+            .element img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 4px #000000;
+                transition: all 1s;
+            }
+            
+            .lien1 {
+                text-align: center;
+                color: #2E8B57;
+            }
+            
+            .element img:hover {
+                transform: scale(1.1);
+            }
+            
+            .container-general {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            @media only screen and (min-width: 961px) {
+                .container-general {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+            /*Fin CSS Mathieu*/
+            /*CSS De Delphine*/
+            
+            .containerD {
+                background-color: #98FB98;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            @media only screen and (min-width: 961px) {
+                .visuelg {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .visueld {
+                    display: flex;
+                }
+                .containerD p {
+                    padding: 10px 20px;
+                    flex: 2;
+                }
+                .visuel {
+                    flex: 1;
+                }
+            }
+            
+            h2,
+            h3 {
+                padding-top: 20px;
+                text-align: center;
+            }
+            
+            p,
+            article,
+            iframe,
+            .visuel {
+                margin: 10px auto;
+            }
+            
+            p {
+                width: 60%;
+                text-align: justify;
+            }
+            
+            .visuel {
+                text-align: center;
+                width: 100%
+            }
+            
+            .containerD img {
+                width: 60%;
+                max-height: 300px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 4px #000000;
+            }
+            
+            .carte {}
+            /* pour iframe : iframe + output */
+            
+            iframe {
+                border: 1px solid black;
+                box-shadow: 2px 2px 4px #000000;
+                width: 50%;
+            }
+            
+            .output {
+                background: #eee;
+            }
+            /*Formulaire Anais*/
+            
+            .contact {
+                text-align: center;
+                margin-left: -5%;
+            }
+            
+            .containerFormulaire {
+                display: flex;
+                flex-direction: column;
+                margin-left: 5%;
+                width: 90%;
+            }
+            
+            .Send {
+                margin-left: auto;
+                font-size: 80%;
+                text-align: center;
+            }
+            
+            .containerFormulaire input {
+                display: flex;
+                flex-direction: column;
+                padding-left: 4%;
+                padding-right: 4%;
+                background-color: #F8F8F8F8;
+                border-radius: 5px;
+            }
+            /*Footer*/
+            
+            .containerFooter {
+                background-color: #2E8B57;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: auto;
+                margin-bottom: auto;
+                grid-column: 1 / -1;
+                align-content: stretch;
+                border-radius: 6px;
+            }
+            
+            .Navigation {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex: 0.5;
+            }
+            
+            .SocialMedia {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .mentionLegal {
+                font-size: 70%;
+                display: flex;
+                align-items: flex-end;
+            }
+            
+            .logo {
+                width: 30px;
+            }
+            /* Modifier a avec une classe */
+            
+            .lienFooter {
+                text-decoration: none;
+                color: white;
+            }
+            
+            @media screen and (max-width:961px) {
+                .containerFooter {
+                    flex-direction: column;
+                    height: auto;
+                    justify-content: center;
+                    align-content: center;
+                }
+                a {
+                    text-align: center;
+                }
+                .Navigation,
+                .mentionLegal,
+                .SocialMedia {
+                    margin-bottom: auto;
+                    margin-top: auto;
+                }
+            }
+            /* mettre menu burger sur version portable */
+            /* enlever le footer sur version portable */
+            /* mettre code du footer sur version PC */
+            /* enlever navbar sur version portable */
+            /*Début CSS Partie Céline */
+            
+            h1 {
+                color: #2E8B57;
+                font-size: 55px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            
+            h2 {
+                color: #2E8B57;
+                font-size: 30px;
+                text-align: center;
+            }
+            
+            img {
+                border-radius: 50%;
+                box-shadow: 2px 2px 4px #000000;
+            }
+            
+            p {
+                font-family: sans-serif;
+                justify-content: align;
+            }
+            
+            .description {
+                background-color: #98FB98;
+                padding-bottom: 100px;
+            }
+            
+            .paradescription {
+                justify-content: align;
+                text-align: center;
+                padding-top: 30px;
+            }
+            
+            nav {
+                display: none;
+            }
+            /* Retirer / modifier le code display:none */
+            
+            ;
+            .containerFooter {
+                display: none;
+            }
+            
+            @media (min-width: 962px) {
+                nav {
+                    background-color: #2E8B57;
+                    display: block;
+                    margin: 0;
+                    font-size: 20px;
+                }
+                nav ul {
+                    margin: 0px
+                }
+                nav ul li {
+                    list-style-type: none;
+                    color: black;
+                    display: inline-block;
+                    padding: 10px 90px;
+                }
+                .menu:hover {
+                    background-color: #98FB98;
+                    color: black;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                }
+                .container {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-around;
+                    text-align: justify;
+                }
+                .container div {
+                    margin: 30px;
+                }
+                .image {
+                    padding-left: 50px;
+                }
+                #logo {
+                    padding: 0px 5px;
+                }
