@@ -1,4 +1,4 @@
-/*définition de la largeur du body*/
+chrome/*définition de la largeur du body*/
 body{
   width:100%;
 }
@@ -15,6 +15,7 @@ body{
   box-shadow: 5px 5px 5px black;
   border-radius: 50%;
   padding: 10px;
+  z-index: 250;
 }
 
 div.centrer{
@@ -39,6 +40,7 @@ div.menu {
 
 div.menu:target {
   display: flex;
+  z-index: 251;
 }
 
 /*mise en page de la nav*/
@@ -54,7 +56,7 @@ nav {
 /*mise en forme des listes de la nav*/
 .ulNav {
   display: flex;
-  flex-direction: column-reverse; ;
+  flex-direction: column-reverse;
   justify-content: space-around;
   margin: auto;
   /*margin-top: 15vh;*/
@@ -69,8 +71,7 @@ nav {
   list-style-type: none;
   width: 100%;
   height: 100vh;
-  transition: all 1s ;
-
+  
 }
 /*mise en forme de la croix de fermeture du menu*/
 .close{
@@ -109,7 +110,54 @@ mise ne place des medias
     display: none;
   }
 
-  div.menu {
+  div.menu{
+    background-color: #2E8B57;
+    display: flex;
+    margin: 0;
+    font-size:20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    position: static;
+     
+   }
+
+   div.menu:target {
+  
+  display: flex;
+  z-index: 1;
+}
+
+  .ulNav {
+     margin: 0px
+     height: 25px;
+     flex-direction: row;
+     justify-content: space-around;
+     background-color: #2E8B57;
+    /* border-radius: 10px;*/
+     font-size: 2em;
+     height: 10vh;
+     flex-direction: row;
+     display: absolute;
+      
+   }
+  .page ul li {
+       list-style-type: none;
+       color: black;
+       display: inline-block;
+       padding: 10px 90px;
+   }
+   .aNav:hover {
+       background-color: #98FB98;
+       color: black;
+     /*text-transform: uppercase;*/
+    /* padding: 10px 20px;*/
+   }
+   .close{
+    display: none;
+   }
+  /*div.menu {
     display: flex;
     flex-direction: wrap;
     left: 0;
@@ -133,29 +181,33 @@ mise ne place des medias
     width: 70%;
     height: 10vh;
     border-radius: 5% ;
-  }
-
+    display: absolute;
+  }*/
+/*
   .close{
     display: none;
     flex: 0;
   }
+  
   .imgNav{
     display: block;
     width: 15%;
   }
+  
   .aNav:hover{
     background-color: white;
     border-radius: 15%;
     padding-left: 0 10px 0 10px;
     margin: 0 10px 0 10px;
   }
-  .aNav{
+  */
+  /*.aNav{
     vertical-align: sub;
-  }
+  }*/
 
 }
 
-S
+
 /*Css de Mathieu*/
 
 .fondvert {
