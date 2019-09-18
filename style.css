@@ -418,7 +418,7 @@ justify-content: align;
 }
 
 
-nav {
+.page {
   display: none;
 }
 
@@ -428,17 +428,17 @@ nav {
 
 @media (min-width: 962px){
 
-nav {
+.page{
       background-color: #2E8B57;
       display: block;
       margin: 0;
       font-size:20px;
   }
-  nav ul {
+  .page ul {
       margin: 0px
   }
   
-  nav ul li {
+  .page ul li {
       list-style-type: none;
       color: black;
       display: inline-block;
