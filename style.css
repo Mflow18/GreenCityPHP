@@ -68,7 +68,6 @@ ul {
   list-style-type: none;
   width: 100%;
   height: 100vh;
-
 }
 /*mise en forme de la croix de fermeture du menu*/
 .close{
@@ -80,16 +79,11 @@ ul {
   background-color: white;
   padding: 10px;
   margin-bottom: 1px;
- 
-
-
 
 }
+
 a{
   text-decoration: none;
-}
-img{
-  display: none;
 }
 
 
@@ -150,8 +144,6 @@ a{
 
 }
 
-<<<<<<< HEAD
-=======
 /*Css de Mathieu*/
 
 .fondvert {
@@ -202,7 +194,6 @@ h2 {
 
 /*CSS De Delphine*/
 
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
 .containerD{
     background-color: #98FB98;
     padding: 5px;
@@ -274,7 +265,6 @@ iframe {
 .output {
     background: #eee;
 }
-<<<<<<< HEAD
 
 /*Formulaire Anais*/
 
@@ -344,10 +334,9 @@ iframe {
   width: 30px;  
   }
 
-a{
+.lienfooter {
   text-decoration: none;
   color : white;
-  
   }
 
 
@@ -368,8 +357,6 @@ a{
     }
  
   }
-=======
->>>>>>> c4878d589e4549184cc21363e28b75515214a4f3
  /* mettre menu burger sur version portable */
  /* enlever le footer sur version portable */
  /* mettre code du footer sur version PC */
@@ -391,8 +378,6 @@ h2{
 
 }
 
-
-
 img{
   border-radius: 50%;
     box-shadow: 2px 2px 4px #000000;
@@ -404,8 +389,6 @@ font-family: sans-serif;
 justify-content: align;
 }
 
-
-
 .description {
   background-color: #98FB98;
   padding-bottom: 100px;
@@ -416,7 +399,6 @@ justify-content: align;
   text-align:center;
   padding-top:30px;
 }
-
 
 nav {
   display: none;
