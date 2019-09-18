@@ -82,12 +82,13 @@ ul {
   margin-bottom: 1px;
  
 
-
-
 }
 a{
   text-decoration: none;
 }
+
+/* Mettre une classe à img sinon ca influence les autres liens*/
+
 img{
   display: none;
 }
@@ -138,6 +139,9 @@ img{
   display: block;
   width: 15%;
 }
+
+/* Mettre une classe sinon les a:hover s'appliquent à tous les liens*/
+
 a:hover{
   background-color: white;
   border-radius: 15%;
@@ -302,6 +306,7 @@ iframe {
   }
 
 /*Footer*/
+
 .containerFooter{
   background-color:#2E8B57 ;
   display: flex;
@@ -340,6 +345,9 @@ iframe {
   width: 30px;  
   }
 
+/* Modifier a avec une classe */
+
+
 a{
   text-decoration: none;
   color : white;
@@ -369,6 +377,7 @@ a{
  /* enlever le footer sur version portable */
  /* mettre code du footer sur version PC */
  /* enlever navbar sur version portable */
+
  /*Début CSS Partie Céline */
 
 
@@ -416,6 +425,8 @@ justify-content: align;
 nav {
   display: none;
 }
+
+/* Retirer / modifier le code display:none */;
 
 .containerFooter {
   display:none;
