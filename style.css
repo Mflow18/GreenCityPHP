@@ -363,7 +363,9 @@ h2 {
    margin-top: auto;
    text-align: center;
 }
- 
+ .footer {
+  display:none;
+}
   }
 
  /* mettre menu burger sur version portable */
@@ -381,13 +383,19 @@ h2 {
   padding-bottom: 20px;
 }
 
-.titrepage2 {
-  color:#2E8B57;
-  font-size:30px;
-  text-align:center;
-
+h2 {
+ color: #2E8B57;
+ text-align: center;
+ font-size:40px;
+ padding-top: 20px;
 }
 
+.imgNav {
+  border-radius: 50%;
+    box-shadow: 2px 2px 4px #000000;
+    position: absolute;
+
+}
 
 .imageActAsso1 {
   border-radius: 50%;
@@ -395,22 +403,11 @@ h2 {
 
 }
 
-.paraActAsso {
-font-family: sans-serif;
-justify-content: align;
-}
-
-
 .description {
   background-color: #98FB98;
   padding-bottom: 100px;
 }
 
-.paradescription{
-  justify-content: align;
-  text-align:center;
-  padding-top:30px;
-}
 
 
 @media (min-width: 962px){
@@ -420,40 +417,46 @@ justify-content: align;
       display: block;
       margin: 0;
       font-size:20px;
-  }
-.page ul {
+      padding; 10px;
+      }
+
+.ulNav ul {
       margin: 0px
   }
   
-.page ul li {
+.aNav ul li {
       list-style-type: none;
       color: black;
       display: inline-block;
       padding: 10px 90px;
   }
   
-  .menuActAsso:hover {
-      background-color: #98FB98;
-      color: black;
+  .aNav:hover {
+    background-color: #98FB98;
+    color: #2E8B57;
     text-transform: uppercase;
     padding: 10px 20px;
-  }
 
+  }  
+ 
   .containerActAsso {
   display:flex;
   flex-direction:row-reverse;
   justify-content: space-around;
   text-align: justify; 
+
 }
 
 .containerActAsso div {
   margin:30px;
 }
  
+.paraActAsso {
+text-align: justify;
+margin-left:100px;
+margin-right:100px;
 
-#logo{
+} 
 
-padding: 0px 5px;
-}
 
 }
