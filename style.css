@@ -474,12 +474,7 @@ h2 {
 }
   }
 
- /* mettre menu burger sur version portable */
- /* enlever le footer sur version portable */
- /* mettre code du footer sur version PC */
- /* enlever navbar sur version portable */
 
- /*Début CSS Partie Céline */
 
 
 .titrepage1 {
@@ -519,10 +514,13 @@ h2 {
 @media (min-width: 962px){
 
 .page {
-      background-color: #2E8B57;
+
+  background-color: #2E8B57;
       display: block;
       margin: 0;
       font-size:20px;
+      }
+
 
 /*.page ul {
 >>>>>>> mise_en_page_nav
@@ -536,7 +534,7 @@ h2 {
       padding: 10px 90px;
   }*/
   
-  .aNav:hover {
+.aNav:hover {
     background-color: #98FB98;
     color: #2E8B57;
     text-transform: uppercase;
@@ -546,9 +544,9 @@ h2 {
  
   .containerActAsso {
   display:flex;
-  flex-direction:row-reverse;
   justify-content: space-around;
   text-align: justify; 
+  flex-direction:row-reverse;
 
 }
 
