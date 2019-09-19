@@ -350,6 +350,7 @@ h2 {
   font-size: 70%;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   }
 
     
@@ -371,12 +372,15 @@ h2 {
 
 }
 
-
   .containerFooter {
     flex-direction: column;
     height: auto;
    justify-content: center;
    align-content: center;
+}
+
+.Navigation {
+  display:none;
 }
 
 .Navigation, .mentionLegal, .SocialMedia {
