@@ -6,6 +6,7 @@ body{
 }
 
 
+
 /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
 .icone{
   font-size: 10vh;
@@ -50,7 +51,7 @@ nav {
   margin: 2em 2em 2em 2em;
   padding: 0;
   width: 100%;
-  height: 100px;
+  height: 110px;
   
 }
 
@@ -61,7 +62,7 @@ nav {
   justify-content: space-around;
   margin: auto;
   padding: 8px;
-  background-color: #98FB98;
+  background-color: #2E8B57;
   position: relative;
   border-radius: 10px;
   font-size: 3em;
@@ -88,6 +89,7 @@ nav {
 }
 .imgNav{
   display: none;
+
 }
 
 
@@ -102,30 +104,40 @@ nav {
   }
 
   div.menu{
-    background-color: #2E8B57;
+    /*background-color: #2E8B57;*/
     display: flex;
     margin: 0;
     font-size:20px;
     left: 0;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 120px;
     position: static;
+    /*padding-top: 19px;*/
+    /*margin-top: 45px;
+    margin-bottom: 45px;*/
      
+   }
+
+   .test{
+    border: solid;
+    width: 100px;
+    height: 100px;
+
    }
 
    div.menu:target {
   
-  display: flex;
-  z-index: 1;
-}
+    display: flex;
+    z-index: 1;
+    }
 
   .ulNav {
      margin: 0px
      height: 25px;
      flex-direction: row;
      justify-content: space-around;
-     background-color: #2E8B57;
+     background-color: transparent;
     /* border-radius: 10px;*/
      font-size: 2em;
      height: 10vh;
@@ -137,7 +149,7 @@ nav {
        list-style-type: none;
        color: black;
        display: inline-block;
-       padding: 10px 90px;
+       padding: 10px 0px;
    }
    .aNav:hover {
        background-color: #98FB98;
@@ -148,6 +160,30 @@ nav {
    .close{
     display: none;
    }
+
+     .page{
+    display: flex;
+   }
+
+   .aNav{
+      color:#98FB98;
+      height: 120px;
+   }
+
+   .imgNav{
+
+    display: block;
+    position: absolute;
+    z-index: 25;
+    top: 13px;
+    margin-left: 45px;
+    border-radius: 50%;
+    width: 100px;
+
+  }
+
+
+
 
 }
 
@@ -442,10 +478,9 @@ h2 {
       display: block;
       margin: 0;
       font-size:20px;
-      padding; 10px;
-      }
 
-.ulNav ul {
+/*.page ul {
+>>>>>>> mise_en_page_nav
       margin: 0px
   }
   
@@ -454,7 +489,7 @@ h2 {
       color: black;
       display: inline-block;
       padding: 10px 90px;
-  }
+  }*/
   
   .aNav:hover {
     background-color: #98FB98;
