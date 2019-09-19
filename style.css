@@ -6,13 +6,13 @@ body{
 }
 
 
+
 /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
 .icone{
   font-size: 10vh;
   display: block;
   text-decoration: none;
   position: fixed;
-  margin-left: 40%;
   margin-top: 80vh;
   color: green;
   box-shadow: 5px 5px 5px black;
@@ -24,7 +24,7 @@ body{
 div.centrer{
   display: flex;
   justify-content: center;
-  width: 100%;
+
 }
 
 /*mise en forme du menu déroulant en position caché*/
@@ -51,7 +51,7 @@ nav {
   margin: 2em 2em 2em 2em;
   padding: 0;
   width: 100%;
-  height: 100px;
+  height: 110px;
   
 }
 
@@ -62,7 +62,7 @@ nav {
   justify-content: space-around;
   margin: auto;
   padding: 8px;
-  background-color: #98FB98;
+  background-color: #2E8B57;
   position: relative;
   border-radius: 10px;
   font-size: 3em;
@@ -89,6 +89,7 @@ nav {
 }
 .imgNav{
   display: none;
+
 }
 
 
@@ -103,30 +104,40 @@ nav {
   }
 
   div.menu{
-    background-color: #2E8B57;
+    /*background-color: #2E8B57;*/
     display: flex;
     margin: 0;
     font-size:20px;
     left: 0;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 120px;
     position: static;
+    /*padding-top: 19px;*/
+    /*margin-top: 45px;
+    margin-bottom: 45px;*/
      
+   }
+
+   .test{
+    border: solid;
+    width: 100px;
+    height: 100px;
+
    }
 
    div.menu:target {
   
-  display: flex;
-  z-index: 1;
-}
+    display: flex;
+    z-index: 1;
+    }
 
   .ulNav {
      margin: 0px
      height: 25px;
      flex-direction: row;
      justify-content: space-around;
-     background-color: #2E8B57;
+     background-color: transparent;
     /* border-radius: 10px;*/
      font-size: 2em;
      height: 10vh;
@@ -138,7 +149,7 @@ nav {
        list-style-type: none;
        color: black;
        display: inline-block;
-       padding: 10px 90px;
+       padding: 10px 0px;
    }
    .aNav:hover {
        background-color: #98FB98;
@@ -149,6 +160,30 @@ nav {
    .close{
     display: none;
    }
+
+     .page{
+    display: flex;
+   }
+
+   .aNav{
+      color:#98FB98;
+      height: 120px;
+   }
+
+   .imgNav{
+
+    display: block;
+    position: absolute;
+    z-index: 25;
+    top: 13px;
+    margin-left: 45px;
+    border-radius: 50%;
+    width: 100px;
+
+  }
+
+
+
 
 }
 
@@ -323,11 +358,12 @@ h2 {
   margin-left: -5%;
 }
 
-.containerFormulaire{
+.containerFormulaire {
   display:flex;
   flex-direction: column;
   margin-left: 5%;
   width: 90%;
+  margin-bottom: 20px;
 }
 
 .Send{
@@ -345,39 +381,52 @@ h2 {
   border-radius: 5px;
   }
 
+
+#Name {
+  width: 50%;
+}
+
+#Email {
+  width :50%;
+}
+
+#Message {
+  height: 100px;
+}
+
 /*Footer*/
 
 .containerFooter{
   background-color:#2E8B57 ;
   display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-column: 1 / -1;
-  align-content: stretch;
-  border-radius: 6px;
-
-  }
-  
-.Navigation{
-  display:flex;
-  flex-direction : column;
   justify-content: space-around;
-  flex: 0.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   }
 
+.Navigation {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 
 .SocialMedia{
+
   display:flex;
   flex-direction : row-reverse;
   justify-content: space-around;
   align-items: center;
+
   }
+
 .mentionLegal{
   font-size: 70%;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   }
 
     
@@ -391,6 +440,14 @@ h2 {
  }
 
 @media screen and (max-width:961px) {
+
+  .formdiv {
+    display:flex;
+   flex-direction: column;
+   align-items:center;
+
+}
+
   .containerFooter {
     flex-direction: column;
     height: auto;
@@ -398,12 +455,18 @@ h2 {
    align-content: center;
 }
 
+  .Navigation {
+   display:none;
+}
+
 .Navigation, .mentionLegal, .SocialMedia {
    margin-bottom: auto;
    margin-top: auto;
    text-align: center;
 }
- 
+ .footer {
+  display:none;
+}
   }
 
  /* mettre menu burger sur version portable */
@@ -421,13 +484,19 @@ h2 {
   padding-bottom: 20px;
 }
 
-.titrepage2 {
-  color:#2E8B57;
-  font-size:30px;
-  text-align:center;
-
+h2 {
+ color: #2E8B57;
+ text-align: center;
+ font-size:40px;
+ padding-top: 20px;
 }
 
+.imgNav {
+  border-radius: 50%;
+    box-shadow: 2px 2px 4px #000000;
+    position: absolute;
+
+}
 
 .imageActAsso1 {
   border-radius: 50%;
@@ -435,22 +504,11 @@ h2 {
 
 }
 
-.paraActAsso {
-font-family: sans-serif;
-justify-content: align;
-}
-
-
 .description {
   background-color: #98FB98;
   padding-bottom: 100px;
 }
 
-.paradescription{
-  justify-content: align;
-  text-align:center;
-  padding-top:30px;
-}
 
 
 @media (min-width: 962px){
@@ -460,40 +518,45 @@ justify-content: align;
       display: block;
       margin: 0;
       font-size:20px;
-  }
-.page ul {
+
+/*.page ul {
+>>>>>>> mise_en_page_nav
       margin: 0px
   }
   
-.page ul li {
+.aNav ul li {
       list-style-type: none;
       color: black;
       display: inline-block;
       padding: 10px 90px;
-  }
+  }*/
   
-  .menuActAsso:hover {
-      background-color: #98FB98;
-      color: black;
+  .aNav:hover {
+    background-color: #98FB98;
+    color: #2E8B57;
     text-transform: uppercase;
     padding: 10px 20px;
-  }
 
+  }  
+ 
   .containerActAsso {
   display:flex;
   flex-direction:row-reverse;
   justify-content: space-around;
   text-align: justify; 
+
 }
 
 .containerActAsso div {
   margin:30px;
 }
  
+.paraActAsso {
+text-align: justify;
+margin-left:100px;
+margin-right:100px;
 
-#logo{
+} 
 
-padding: 0px 5px;
-}
 
 }
