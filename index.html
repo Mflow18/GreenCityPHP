@@ -10,12 +10,11 @@
 	<body>
 
 		
-		<div class="ensemble_menu">
+		<div class="ensemble_menu" id="accueil">
 
-			<div align="centrer"><a href="#exemple1" class="icone">&#9776</a></div> 
-
-			
-
+			<div class="centrer">
+				<a href="#exemple1" class="icone">&#9776</a>
+			</div> 
 			<div class="menu" id="exemple1">
 			  
 			    <nav class="page">
@@ -28,9 +27,7 @@
 				    </ul>
 			    
 			    </nav>
-
 			</div>
-		
 		</div>
 
 	<section id="actions" class="fondvert">
@@ -104,32 +101,44 @@
 		<form>
         	<div class="containerFormulaire">
             	<h2 class="contact">Contact</h2>
-            	<label for="Name"> Name </label>
-            	<input type="text" name="Name" id="Name">
-            	<label for="Email">Email</label>
-            	<input type="text" name="Email" id="Email">
-            	<label for="Message"> Message </label>
-            	<textarea name="Message" id="Message"></textarea>
-            	<input class="Send" type="submit" value="Envoyer">
+            	<div class="formdiv">
+            			<label for="Name"> Name </label>
+            			<input type="text" name="Name" id="Name">
+           		 </div>
+           		 <div class="formdiv">
+            		<label for="Email">Email</label>
+            		<input type="text" name="Email" id="Email">
+            	</div>
+        	    	<label for="Message"> Message </label>
+            		<textarea name="Message" id="Message"></textarea>
+            		<input class="Send" type="submit" value="Envoyer">
+       				<br>
        		</div>    
-    </form> </section>
+    	</form> 
+	</section>
 	
 	<section class="footer">
 		<footer>
 			<div class="containerFooter">
-				<div class="Navigation">
-					<a class="lienFooter" href="Acceuil">Acceuil</a>
-					<a class="lienFooter" href="Action">Action</a>
-					<a class="lienFooter" href="Association">Association</a>
-					<a class="lienFooter" href="Gestion-des-dechets">Gestion des déchets</a>
-					<a class="lienFooter" href="Contact">Contact</a>
-				</div>
+                 <div class="Navigation">
+                    <a class="lienFooter" href="#accueil">Accueil</a>
+                    <a class="lienFooter" href="#actions">Actions</a>
+                    <a class="lienFooter" href="#associations">Associations</a>
+                    <a class="lienFooter" href="#dechets">Gestion des déchets</a>
+                    <a class="lienFooter" href="#contact">Contact</a>
+                </div>
 	
 				<div class="SocialMedia">
-					<a href="https://ibb.co/pLm03jr"><img class="logo 1" src="https://i.ibb.co/pLm03jr/logo-instagram.png" alt="logo-instagram"></a>
-					<a href="https://ibb.co/bNGXyvD"><img class="logo 2" src="https://i.ibb.co/bNGXyvD/twitter-Cmon-Site.png" alt="twitter-Cmon-Site"></a> 
-					<a href="https://ibb.co/NSy2zN6"><img class="logo 3" src="https://i.ibb.co/NSy2zN6/facebook-icone-Cmon-Site.png" alt="facebook-icone-Cmon-Site"></a>            
-				</div>
+                    <a href="http://aremacs.com/" target="_blank">
+                    <img class="logo 1" src="https://i.ibb.co/pLm03jr/logo-instagram.png" alt="logo-instagram">
+                    </a>
+                    <a href="https://flexboxfroggy.com/" target="_blank">
+                    <img class="logo 2" src="https://i.ibb.co/bNGXyvD/twitter-Cmon-Site.png" alt="twitter-Cmon-Site">
+                    </a>
+                    <a href="https://www.ecossolies.fr/-Le-Solilab-" target="_blank">
+                    <img class="logo 3" src="https://i.ibb.co/NSy2zN6/facebook-icone-Cmon-Site.png" alt="facebook-icone-Cmon-Site">
+                    </a>
+               </div>
 				<div class="mentionLegal">
 					<a class="legalMentions" href="">@2019 Groupe2 Delphine, Maxime, Céline, Mathieu, Anaïs</a>
 				</div>
