@@ -379,8 +379,8 @@ h2 {
    align-content: center;
 }
 
-.Navigation {
-  display:none;
+  .Navigation {
+   display:none;
 }
 
 .Navigation, .mentionLegal, .SocialMedia {
