@@ -99,6 +99,11 @@ nav {
 
 @media (min-width: 961px) {
 
+  body {
+      width:90%;
+      margin:auto;
+  }
+
   .icone{
     display: none;
   }
