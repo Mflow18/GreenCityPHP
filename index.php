@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Nantes Cité Verte</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-	</head>
+
 
 	<body>	
 
-		<div class="ensemble_menu" id="accueil">
+    <?php include 'header.php' ?>
 
-
-			<div class="centrer"><a href="#exemple1" class="icone">&#9776</a></div> 
-
-			<div class="centrer">
-				<a href="#exemple1" class="icone">&#9776</a>
-			</div> 
-			<div class="menu" id="exemple1">
-			  
-			    <nav class="page">
-			    	
-			    	<ul class="ulNav">
-				    	
-				    	<a href="#actions">
-				    	<img src="image/logo.jpg" alt="logo Elephant" class="imgNav" />
-				    	</a>	
-				    	<li><a href="" class="close aNav">&#10006</a></li>
-			            <li><a href="index.html#associations" class="aNav">Associations</a></li>  
-			            <li><a href="index.html#actions" class="aNav">Actions</a></li>
-			            <li><a href="index.html#dechets" class="aNav">Déchets</a></li>
-			            <li><a href="index.html#contact" class="aNav">Contact</a></li>
-			          </ul>	    
-			    </nav>
-			</div>
-		</div>
-
-	<section id="actions" class="fondvert">
+	<section id="actions" class="fond">
 		<h2> Nos actions </h2>
 		<div class="container-general">
 			<div class="element">
@@ -134,35 +104,8 @@
        		</div>    
     	</form> 
 	</section>
-	
-	<section class="footer">
-		<footer>
-			 <div class="containerFooter">
-			      <div class="Navigation">
-				       <a class="lienFooter" href="index.html#accueil">Accueil</a>
-				       <a class="lienFooter" href="index.html#actions">Actions</a>
-				       <a class="lienFooter" href="index.html#associations">Associations</a>
-				       <a class="lienFooter" href="index.html#dechets">Gestion des déchets</a>
-				       <a class="lienFooter" href="index.html#contact">Contact</a>
-			     </div>
 
-	
-				<div class="SocialMedia">
-                    <a href="http://aremacs.com/" target="_blank">
-                    <img class="logo 1" src="https://i.ibb.co/pLm03jr/logo-instagram.png" alt="logo-instagram">
-                    </a>
-                    <a href="https://flexboxfroggy.com/" target="_blank">
-                    <img class="logo 2" src="https://i.ibb.co/bNGXyvD/twitter-Cmon-Site.png" alt="twitter-Cmon-Site">
-                    </a>
-                    <a href="https://www.ecossolies.fr/-Le-Solilab-" target="_blank">
-                    <img class="logo 3" src="https://i.ibb.co/NSy2zN6/facebook-icone-Cmon-Site.png" alt="facebook-icone-Cmon-Site">
-                    </a>
-               </div>
-				<div class="mentionLegal">
-					<a class="legalMentions" href="">@2019 Groupe2 Delphine, Maxime, Céline, Mathieu, Anaïs</a>
-				</div>
-			</div>
-		</footer> 
-	</section>
+    <?php include 'footer.php' ?>
+
 </body>
 </html>

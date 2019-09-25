@@ -2,9 +2,17 @@
 
 body{
   width:100%;
-  font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h2 {
+    color: #201e50;
+    text-align: center;
+}
+
+h3, p {
+    color: #201e50;
+}
 
 
 /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
@@ -93,112 +101,10 @@ nav {
 
 }
 
+/* Partie Actions et Assos */
 
-/*
- Mise en place des medias
-*/
-
-@media (min-width: 961px) {
-
-  body {
-      width:95%;
-      margin:auto;
-  }
-
-  .icone{
-    display: none;
-  }
-
-  div.menu{
-    /*background-color: #2E8B57;*/
-    display: flex;
-    margin: 0;
-    font-size:20px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 120px;
-    position: static;
-    /*padding-top: 19px;*/
-    /*margin-top: 45px;
-    margin-bottom: 45px;*/
-     
-   }
-
-   .test{
-    border: solid;
-    width: 100px;
-    height: 100px;
-
-   }
-
-   div.menu:target {
-  
-    display: flex;
-    z-index: 1;
-    }
-
-  .ulNav {
-     margin: 0px
-     height: 25px;
-     flex-direction: row;
-     justify-content: space-around;
-     background-color: transparent;
-    /* border-radius: 10px;*/
-     font-size: 2em;
-     height: 10vh;
-     flex-direction: row;
-     display: absolute;
-      
-   }
-  .page ul li {
-       list-style-type: none;
-       color: black;
-       display: inline-block;
-       padding: 10px 0px;
-   }
-   .aNav:hover {
-       background-color: #98FB98;
-       color: black;
-     /*text-transform: uppercase;*/
-    /* padding: 10px 20px;*/
-   }
-   .close{
-    display: none;
-   }
-
-     .page{
-    display: flex;
-   }
-
-   .aNav{
-      color:#98FB98;
-      height: 120px;
-   }
-
-   .imgNav{
-
-    display: block;
-    z-index: 25;
-    top: 13px;
-    margin-left: 45px;
-    border-radius: 50%;
-    width: 100px;
-
-  }
-
-}
-
-
-/*Css de Mathieu*/
-
-.fondvert {
-  background-color: #98FB98;
-}
-
-h2 {
-  color: #2E8B57;
-  text-align: center;
+.fond {
+  background-color: #698996;
 }
 
 .element img {
@@ -212,7 +118,7 @@ h2 {
 
 .lien1 {
   text-align: center;
-  color: #2E8B57;
+  color: #201e50;
   
 }
 
@@ -228,23 +134,19 @@ h2 {
 
 @media only screen and (min-width: 961px) {
 
-  .container-general {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+
 
 }
 
 /*Fin CSS Mathieu*/
 
-/*CSS De Delphine*/
+/* Gestion des déchets */
 
 .containerD {
    box-sizing: border-box;
    margin: 0px;
    padding: 5px;
-   background-color: #98FB98;
+   background-color: #698996;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -253,42 +155,10 @@ h2 {
 
 @media only screen and (min-width: 961px) {
 
-.visuelg, .triButton {
-	display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.triButton div {
-  padding: 0px 20px;
-}
-
-
-.visueld {
-  display: flex;
-}
-
-.visuelg p {
-	padding: 10px 20px;
-	flex : 3;
-}
-
-.visueld p {
-  padding: 10px 20px;
-  flex : 1;
-}
-
-.visuel {
-	flex : 1;
-}
-
-
-}
 
 .containerD h2, .containerD h3 {
 	padding-top: 20px;
 	text-align: center;
-  color: #2E8B57;
 }
 
 
@@ -299,8 +169,6 @@ h2 {
 .visueld p, .visuelg p {
   width: 60%;
 	text-align: justify;
-
-  color: #2E8B57;
 }
 
 .containerD img {
@@ -313,6 +181,7 @@ h2 {
 }
 
 /*ajout pour button */
+
 .customButton {
     border: 0;
     line-height: 2.5;
@@ -351,7 +220,7 @@ h2 {
     background: #eee;
 }
 
-/*Formulaire Anais*/
+/*Formulaire */
 
 .contact{
   text-align: center;
@@ -397,7 +266,7 @@ h2 {
 /*Footer*/
 
 .containerFooter{
-  background-color:#2E8B57 ;
+  background-color:#201e50 ;
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
@@ -439,39 +308,6 @@ h2 {
    color: white;
  }
 
-@media screen and (max-width:961px) {
-
-  .formdiv {
-    display:flex;
-   flex-direction: column;
-   align-items:center;
-
-}
-
-  .containerFooter {
-    flex-direction: column;
-    height: auto;
-   justify-content: center;
-   align-content: center;
-}
-
-  .Navigation {
-   display:none;
-}
-
-.Navigation, .mentionLegal, .SocialMedia {
-   margin-bottom: auto;
-   margin-top: auto;
-   text-align: center;
-}
- .footer {
-  display:none;
-}
-  }
-
-
-
-
 .titrepage1 {
   color:#2E8B57;
   font-size:55px;
@@ -480,7 +316,6 @@ h2 {
 }
 
 h2 {
- color: #2E8B57;
  text-align: center;
  font-size:40px;
  padding-top: 20px;
@@ -489,13 +324,11 @@ h2 {
 .imgNav {
   border-radius: 50%;
     box-shadow: 2px 2px 4px #000000;
-
 }
 
 .imageActAsso1 {
   border-radius: 50%;
     box-shadow: 2px 2px 4px #000000;
-
 }
 
 .description {
@@ -503,57 +336,181 @@ h2 {
   padding-bottom: 100px;
 }
 
+/* Media queries */
 
+@media screen and (max-width:961px) {
 
-@media (min-width: 962px){
+    .formdiv {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
 
-.page {
+    }
 
-  background-color: #2E8B57;
-      display: block;
-      margin: 0;
-      font-size:20px;
-      }
+    .containerFooter {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+    }
 
+    .Navigation {
+        display:none;
+    }
 
-/*.page ul {
->>>>>>> mise_en_page_nav
-      margin: 0px
-  }
-  
-.aNav ul li {
-      list-style-type: none;
-      color: black;
-      display: inline-block;
-      padding: 10px 90px;
-  }*/
-  
-.aNav:hover {
-    background-color: #98FB98;
-    color: #2E8B57;
-    text-transform: uppercase;
-    padding: 10px 20px;
-
-  }  
- 
-  .containerActAsso {
-  display:flex;
-  justify-content: space-around;
-  text-align: justify; 
-  flex-direction:row-reverse;
-
+    .Navigation, .mentionLegal, .SocialMedia {
+        margin-bottom: auto;
+        margin-top: auto;
+        text-align: center;
+    }
+    .footer {
+        display:none;
+    }
 }
 
-.containerActAsso div {
-  margin:30px;
-}
- 
-.paraActAsso {
-text-align: justify;
-margin-left:100px;
-margin-right:100px;
+@media (min-width: 961px) {
 
-} 
+    body {
+        width:95%;
+        margin:auto;
+    }
 
+    .icone{
+        display: none;
+    }
+
+    div.menu{
+
+        display: flex;
+        margin: 0;
+        font-size:20px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 120px;
+        position: static;
+
+    }
+
+    .test{
+        border: solid;
+        width: 100px;
+        height: 100px;
+
+    }
+
+    div.menu:target {
+
+        display: flex;
+        z-index: 1;
+    }
+
+    .ulNav {
+        margin: 0px
+        height: 25px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: transparent;
+        font-size: 2em;
+        height: 10vh;
+        flex-direction: row;
+        display: absolute;
+
+    }
+    .page ul li {
+        list-style-type: none;
+        color: black;
+        display: inline-block;
+        padding: 10px 0px;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .page{
+        display: flex;
+    }
+
+    .aNav{
+        color:#201e50;
+        height: 120px;
+    }
+
+    .imgNav{
+
+        display: block;
+        z-index: 25;
+        top: 13px;
+        margin-left: 45px;
+        border-radius: 50%;
+        width: 100px;
+
+    }
+
+    .visuelg, .triButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .triButton div {
+        padding: 0px 20px;
+    }
+
+    .visueld {
+        display: flex;
+    }
+
+    .visuelg p {
+        padding: 10px 20px;
+        flex : 3;
+    }
+
+    .visueld p {
+        padding: 10px 20px;
+        flex : 1;
+    }
+
+    .visuel {
+         flex : 1;
+    }
+
+/* Partie Actions et Assos */
+
+    .container-general {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+/* Pages ActAssos */
+
+    .page {
+
+        background-color: #2E8B57;
+        display: block;
+        margin: 0;
+        font-size:20px;
+    }
+
+    .containerActAsso {
+        display:flex;
+        justify-content: space-around;
+        text-align: justify;
+        flex-direction:row-reverse;
+
+    }
+
+    .containerActAsso div {
+        margin:30px;
+    }
+
+    .paraActAsso {
+        text-align: justify;
+        margin-left:100px;
+        margin-right:100px;
+
+    }
 
 }
