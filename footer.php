@@ -2,11 +2,11 @@
     <footer>
         <div class="containerFooter">
             <div class="Navigation">
-                <a class="lienFooter" href="index.html#accueil">Accueil</a>
-                <a class="lienFooter" href="index.html#actions">Actions</a>
-                <a class="lienFooter" href="index.html#associations">Associations</a>
-                <a class="lienFooter" href="index.html#dechets">Gestion des déchets</a>
-                <a class="lienFooter" href="index.html#contact">Contact</a>
+                <a class="lienFooter" href="index.php#accueil">Accueil</a>
+                <a class="lienFooter" href="index.php#actions">Actions</a>
+                <a class="lienFooter" href="index.php#associations">Associations</a>
+                <a class="lienFooter" href="index.php#dechets">Gestion des déchets</a>
+                <a class="lienFooter" href="index.php#contact">Contact</a>
             </div>
 
 

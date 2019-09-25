@@ -16,6 +16,7 @@ h3, p {
 
 
 /*mise en forme de l'icone du menu et position fixe toujours visible malgré le scroll*/
+
 .icone{
   font-size: 10vh;
   display: block;
@@ -91,14 +92,14 @@ nav {
   background-color: white;
   padding: 10px;
   margin-bottom: 1px;
- 
 }
+
 .aNav{
   text-decoration: none;
 }
+
 .imgNav{
   display: none;
-
 }
 
 /* Partie Actions et Assos */
@@ -119,7 +120,6 @@ nav {
 .lien1 {
   text-align: center;
   color: #201e50;
-  
 }
 
 .element img:hover {
@@ -153,187 +153,182 @@ nav {
 	 width: 100%;
 }
 
-@media only screen and (min-width: 961px) {
+    .containerD h2, .containerD h3 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .visueld p, .visuelg p, .visuel img {
+        margin: 10px auto;
+    }
+
+    .visueld p, .visuelg p {
+        width: 60%;
+        text-align: justify;
+    }
+
+    .containerD img {
+        width: 60%;
+        display: block;
+        max-height: 250px;
+        max-width: 250px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px #000000;
+    }
+
+    /*ajout pour button */
+    .customButton {
+        border: 0;
+        line-height: 2.5;
+        width: 140px;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgba(39, 174, 96, 1);
+        background-image: linear-gradient(to top left,
+        rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, .2) 30%,
+        rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .customButton:hover {
+        background-color: rgba(46, 204, 113, 1);
+    }
+
+    .customButton:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+    /* pour carte interactive : object + output */
+    .visueld object {
+        width: 98%;
+        min-height: 300px;
+    }
+
+    .containerD .output {
+        background: #eee;
+    }
+
+    /*Formulaire */
+    .contact {
+        text-align: center;
+        margin-left: -5%;
+    }
+
+    .containerFormulaire {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .Send {
+        margin-left: auto;
+        font-size: 80%;
+        text-align: center;
+    }
+
+    .containerFormulaire input {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color: #F8F8F8F8;
+        border-radius: 5px;
+    }
 
 
-.containerD h2, .containerD h3 {
-	padding-top: 20px;
-	text-align: center;
-}
+    #Name {
+        width: 50%;
+    }
+
+    #Email {
+        width: 50%;
+    }
+
+    #Message {
+        height: 100px;
+    }
+
+    /*Footer*/
+    .containerFooter {
+        background-color: #201e50;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .Navigation {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .SocialMedia {
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .mentionLegal {
+        font-size: 70%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
 
 
-.visueld p, .visuelg p, .visuel img {
-  margin: 10px auto;
-}
+    .logo {
+        width: 30px;
+    }
 
-.visueld p, .visuelg p {
-  width: 60%;
-	text-align: justify;
-}
+    .lienFooter {
+        text-decoration: none;
+        color: white;
+    }
 
-.containerD img {
-	width: 60%;
-  display: block;
-	max-height: 250px;
-  max-width: 250px;
-	border-radius: 50%;
-  box-shadow: 2px 2px 4px #000000;
-}
+    .titrepage1 {
+        color: #2E8B57;
+        font-size: 55px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
-/*ajout pour button */
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        padding-top: 20px;
+    }
 
-.customButton {
-    border: 0;
-    line-height: 2.5;
-    width: 140px;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(39, 174, 96, 1);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
+    .imgNav {
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px #000000;
+    }
 
-.customButton:hover {
-    background-color: rgba(46, 204, 113, 1);
-}
+    .imageActAsso1 {
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px #000000;
+    }
 
-.customButton:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
+    .description {
+        background-color: #98FB98;
+        padding-bottom: 100px;
+    }
 
-/* pour carte interactive : object + output */
-.visueld object {
-    width: 98%;
-    min-height: 300px;
-}
-
-.containerD .output {
-    background: #eee;
-}
-
-/*Formulaire */
-
-.contact{
-  text-align: center;
-  margin-left: -5%;
-}
-
-.containerFormulaire {
-  display:flex;
-  flex-direction: column;
-  margin-left: 5%;
-  width: 90%;
-  margin-bottom: 20px;
-}
-
-.Send{
-  margin-left: auto;
-  font-size: 80%;
-  text-align: center;
-  }
-
-.containerFormulaire input{
-  display:flex;
-  flex-direction: column;
-  padding-left: 4% ;
-  padding-right:4%;  
-  background-color: #F8F8F8F8;
-  border-radius: 5px;
-  }
-
-
-#Name {
-  width: 50%;
-}
-
-#Email {
-  width :50%;
-}
-
-#Message {
-  height: 100px;
-}
-
-/*Footer*/
-
-.containerFooter{
-  background-color:#201e50 ;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  }
-
-.Navigation {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.SocialMedia{
-
-  display:flex;
-  flex-direction : row-reverse;
-  justify-content: space-around;
-  align-items: center;
-
-  }
-
-.mentionLegal{
-  font-size: 70%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  }
-
-    
-.logo{
-  width: 30px;  
-  }
-
-.lienFooter {
-   text-decoration: none;
-   color: white;
- }
-
-.titrepage1 {
-  color:#2E8B57;
-  font-size:55px;
-  text-align:center;
-  padding-bottom: 20px;
-}
-
-h2 {
- text-align: center;
- font-size:40px;
- padding-top: 20px;
-}
-
-.imgNav {
-  border-radius: 50%;
-    box-shadow: 2px 2px 4px #000000;
-}
-
-.imageActAsso1 {
-  border-radius: 50%;
-    box-shadow: 2px 2px 4px #000000;
-}
-
-.description {
-  background-color: #98FB98;
-  padding-bottom: 100px;
 }
 
 /* Media queries */
@@ -447,6 +442,8 @@ h2 {
         width: 100px;
 
     }
+
+    /* Gestion des déchets */
 
     .visuelg, .triButton {
         display: flex;
