@@ -244,6 +244,9 @@ nav {
         border-radius: 5px;
     }
 
+    .error {
+        color: red;
+    }
 
     #Name {
         width: 50%;

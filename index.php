@@ -80,23 +80,9 @@
         </div>
     </section>
 	<section class="containerFormulaire">
-		<form>
-        	<div class="containerFormulaire">
-            	<h2 id="contact" class="contact">Contact</h2>
-            	<div class="formdiv">
-            			<label for="Name"> Name </label>
-            			<input type="text" name="Name" id="Name">
-           		 </div>
-           		 <div class="formdiv">
-            		<label for="Email">Email</label>
-            		<input type="text" name="Email" id="Email">
-            	</div>
-        	    	<label for="Message"> Message </label>
-            		<textarea name="Message" id="Message"></textarea>
-            		<input class="Send" type="submit" value="Envoyer">
-       				<br>
-       		</div>    
-    	</form> 
+
+        <?php include 'form.php' ?>
+
 	</section>
 
     <?php include 'footer.php' ?>
