@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <title>My Green City</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+</head>
 	<body>	
-
-    <?php include 'header.php' ?>
+    <?php   require 'connect.php';
+            include 'header.php'; ?>
 
 	<section id="actions" class="fond">
 		<h2> Nos actions </h2>

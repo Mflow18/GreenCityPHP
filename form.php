@@ -1,18 +1,32 @@
 <?php
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $isValid = true;
         if (!isset($_POST['firstName']) || empty($_POST['firstName'])) {
             $firstNameError = "Veuillez indiquer votre nom.";
-        };
+            $isValid = false;
+        }
         if (!isset($_POST['email']) || empty($_POST['email'])) {
+            $isValid = false;
             $emailError = "Veuillez indiquer votre adresse email.";
         } elseif (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $emailError = "Please enter a valid email";
-        };
+            $isValid = false;
+            $emailError = "Veuillez indiquer une adresse email valide.";
+        }
 
         if (!isset($_POST['message']) || empty($_POST['message'])) {
+            $isValid = false;
             $messageError = "Veuillez indiquer votre message.";
-        };
+        }
+        if ($isValid) {
+            $pdo = new PDO (DSN,USER,PASSWORD);
+            $query = "INSERT INTO contact(firstname, email, message) VALUES (:firstname, :email, :message)";
+            $request = $pdo-> prepare($query);
+            $request -> bindValue(':firstname', $_POST['firstName'], PDO::PARAM_STR);
+            $request -> bindValue(':email', $_POST['email'], PDO::PARAM_STR);
+            $request -> bindValue(':message', $_POST['message'], PDO::PARAM_STR);
+            $request -> execute();
+        }
     }
 
 ?>
